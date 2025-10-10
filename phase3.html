@@ -1,0 +1,26 @@
+<!-- phase3.html -->
+<!DOCTYPE html>
+<!-- Similar structure, with Phase 3 content -->
+<section class="container my-5">
+    <h2>Phase 3: Software Development (2-3 weeks)</h2>
+    <p>Goal: Develop code for calendar sync, visual generation, and app integration.</p>
+
+    <h3>Set Up Development Environment on RPi</h3>
+    <p>Tasks: Install Python and necessary libraries. Set up version control.</p>
+    <p>Tools/Resources: Raspberry Pi OS (free download). Python (pre-installed; use sudo apt update && sudo apt install python3-pip). Git (install via sudo apt install git, free).</p>
+    <p>Timeline: 1 day. Tips: Enable SSH for remote coding from your computer (set in RPi settings).</p>
+
+    <h3>Develop Backend for Calendar Integration and Visual Generation</h3>
+    <p>Tasks: Write Python scripts to fetch calendar events (parse tasks, calculate transitions), generate visuals (e.g., wave animations, color shifts using libraries), and implement calm mode (static or dimmed visuals).</p>
+    <p>Tools/Resources: Libraries: Pillow (pip install Pillow) or OpenCV (pip install opencv-python) for image generation, pytz (pip install pytz) for timezones, Google API Client (pip install google-api-python-client). VS Code or Thonny (free editors; install on RPi or remote). Google Developer Console credentials (free; create OAuth keys for Calendar API).</p>
+    <p>Timeline: 5-7 days. Tips: Use sample code from Pillow docs; handle API errors with fallback visuals (e.g., gray screen).</p>
+
+    <h3>Build Mobile/Web App Integration</h3>
+    <p>Tasks: Create a web server on RPi for app commands (e.g., postpone task updates calendar). Develop the app to sync and control (e.g., toggle modes).</p>
+    <p>Tools/Resources: Flask library (pip install flask) for web server. Flutter (free framework) or React Native (free) for mobile app—install on your computer with Android Studio/Xcode (free). Wi-Fi network (RPi's built-in) for app-RPi communication.</p>
+    <p>Timeline: 5-7 days. Tips: Test with a web browser first (e.g., http://rpi-ip:5000); use HTTP endpoints like /updateTask.</p>
+
+    <div class="progress mt-4">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0% Complete</div>
+    </div>
+</section>
