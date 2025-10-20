@@ -1,9 +1,919 @@
-<!-- phase2.html -->
 <!DOCTYPE html>
-<!-- Similar structure to phase1.html, with content for Phase 2 -->
-<!-- ... Include navbar, section with Phase 2 details, progress bar at 0%, footer ... -->
-<section class="container my-5">
-    <h1>Low Fidelity Prototype</h1>
-    <h2>COMING SOON..... STAY CONNECTED</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 2: Low Fidelity Prototype</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .phase-card {
+            margin-bottom: 2rem;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            height: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ambient Task Awareness Projector</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase1.html">Phase 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase2.html">Phase 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase3.html">Phase 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase4.html">Phase 4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase5.html">Phase 5</a></li>
+                    <li class="nav-item"><a class="nav-link" href="phase6.html">Phase 6</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-</section>
+    <section class="container my-5">
+        <h2>Phase 2 : Low Fidelity Prototype</h2>
+
+        <div>
+            <h3><b>Introduction</b></h3>
+            <p>The usability evaluation process is divided into four main stages designed to iteratively test different components of the task reminder system, ranging from conceptual sketches to an interactive app prototype. Each stage involves distinct participant groups and goals, aiming to refine the design through both qualitative feedback and quantitative measures.</p>
+        </div>
+
+        <div>
+            <h3><b>1 – Focus Group: Evaluating Projector Concept Sketches</b></h3>
+            <h4><b>Purpose</b></h4>
+            <p>Explore user perceptions of 10 projected concepts to understand aesthetic preferences, perceived meaning, and environmental suitability. Identify top design for follow-up testing and projection development. Prior to conducting the test, we did some ideating (and after this test concept exploration continued with the conversation in mind).</p>
+            <div class="text-center">
+                <img src="images/phase2/Picture1.png" alt="Ideation Explorations" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Method</b></h4>
+            <p>Focus group: 7 participants recruited from the target demographic (e.g., students and professionals who work at desks).</p>
+            <h4><b>Materials</b>:</h4>
+            <ul>
+                <li>Ten printed sketch concept visuals.</li>
+                <li>Voting sheets (rank #1–3 favorites).</li>
+                <li>Note-taking template for facilitator.</li>
+            </ul>
+            <h4><b>Procedure</b>:</h4>
+            <ul>
+                <li>Welcome participants, introduce the concept of the projector.</li>
+                <li>Ask environment and habits questions (blank wall, color, use of timers for their tasks).</li>
+                <li>Present all 10 concept sketches sequentially.</li>
+                <li>Facilitate open discussion around impressions and perceived meanings.</li>
+                <li>Have participants rank their top 3 favorites on paper.</li>
+                <li>Collect sheets and summarize emerging themes.</li>
+                <li>Data Collected:</li>
+                <ul>
+                    <li>Qualitative discussion notes.</li>
+                    <li>Preference rankings (Top 3 per participant).</li>
+                    <li>Observations of group dynamics and consensus points.</li>
+                </ul>
+            </ul>
+            
+            
+            <h4><b>Intro Script</b></h4>
+            <p>Hello and thank you for joining us. We have a few questions to ask before we begin:</p>
+            <ul>
+                <li>By a raise of hands how many of you have a blank wall near your primary work desk?</li>
+                <li>Of those of you with your hand up. Please drop them down if the wall is white. If not white, what color is it?</li>
+                <li>Now again raise your hands if you ever use timers, set time stops (like I want to do this until 2pm) while you do work or homework? Lower your hands</li>
+                <li>Raise your hand if this is something you do often to structure your day.</li>
+            </ul>
+            <p>Today, we’ll be looking at a series of 10 concept sketches for a projected reminder system.</p>
+            <p>This system is meant to display subtle light cues on your wall as a way to remind you of tasks, like a visual timer, but without numbers. It may move or change shape to represent time passing or task changes. Please look at each of the sketches carefully, discuss what you think each might do to signal time passing, and share what you like or dislike about them.</p>
+            <h4><b>Concept images shown to group</b>:</h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture2.png" alt="Concept images shown to group" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Group Discussion Prompts</b></h4>
+            <ul>
+                <li>Which of these designs feels calming or motivating? Which feels intrusive or confusing?</li>
+                <li>Which ones do you think would fit best into your workspace?</li>
+            </ul>
+            <h4><b>Conclusion Script</b></h4>
+            <p>Thank you for your thoughts! Please take a look at the papers on the wall in front of you and write the numbers of your top three favorites. Label them as 1, 2, and 3 in order of preference. Your votes will help us understand which concepts to develop further.</p>
+            <h4><b>Participants and Objective</b></h4>
+            <p>A focus group with seven professionals (our secondary persona) who regularly work at desks was conducted to explore user perceptions of ten projected design concepts. The goal was to understand the most calming image as well as aesthetic preferences, perceived meaning, and environmental suitability.</p>
+            <h4><b>Time Management Habits</b></h4>
+            <p>Only three participants reported using timers or time blocks (e.g., “I’ll work until 3 PM”). Most participants preferred maintaining a running list of tasks and continuing until completion. This suggests that structured time tracking may be less relevant for professionals in team-based environments, where workflows are often organized collaboratively or by project management tools. Participants indicated they seldom felt overwhelmed and generally had sufficient time to complete their tasks, possibly due to the presence of production coordinators and clear productivity structures within their workplaces.</p>
+            <h4><b>Notes about the spaces</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>How many walls have beside desk? (of 7)</th>
+                        <th>How many are white?</th>
+                        <th>What other color?</th>
+                        <th>How many uses of timers or blocks of time? (of 7)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7/7</td>
+                        <td>6</td>
+                        <td>1-brown industrial</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><b>The conclusion of the votes</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#1 Split circle</th>
+                        <th>#2 Night landscape</th>
+                        <th>#3 Rhythmic waves</th>
+                        <th>#4 Branch with a leaf</th>
+                        <th>#5 Color Changing light</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                    </tr>
+                    <tr>
+                        <td>Has potential</td>
+                        <td>Falling stars could be cool or the moon becoming brighter</td>
+                        <td>Could be great if it matched the energy and/or focus level</td>
+                        <td>Could have season or slow fall like that it is nature and potential for color shift</td>
+                        <td>Calm, non-intrusive. They found it beautiful.</td>
+                    </tr>
+                    <tr>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                    </tr>
+                    <tr>
+                        <td>Might be too literal of time and not different from a timer</td>
+                        <td>If I’m stressed or behind on tasks, the movement might make me more aware of time passing</td>
+                        <td>Could be busy Different feelings about different colors, might get ignored.</td>
+                        <td>Could be busy</td>
+                        <td>Different feelings about different colors, might get ignored.</td>
+                    </tr>
+                    <tr>
+                        <td>#6 Willow Tree</td>
+                        <td>#7 Expanding ripples</td>
+                        <td>#8 Sphere</td>
+                        <td>#9 Drop dripping</td>
+                        <td>#10 Cat napping</td>
+                    </tr>
+                    <tr>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                        <td>Like notes:</td>
+                    </tr>
+                    <tr>
+                        <td>Like that it is nature and can have seasons as well.</td>
+                        <td>Feels alive, more like breathing</td>
+                        <td>Thought it had potential to do many things or be a setting sun to indicate the day is passing</td>
+                        <td>Wanted a cue of something filling up to understand time passage better</td>
+                        <td>It’s cute!</td>
+                    </tr>
+                    <tr>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                        <td>Dislike notes:</td>
+                    </tr>
+                    <tr>
+                        <td>Could be a bit busy</td>
+                        <td>it could become visually busy and distractive.</td>
+                        <td>Didn't like the idea of bouncing, stressful</td>
+                        <td>Some mentioned it might be annoying</td>
+                        <td>If they have cats, they don't need this one and it might make them sleepy</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Other mentions: riding a bike, the game cosmos (attraction of objects that when the objects all become one) a sand hourglass.</p>
+            <h4><b>Vote count</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>#1 Split circle</th>
+                        <th>#2 Night sky</th>
+                        <th>#3 Rhythmic waves</th>
+                        <th>#4 Leaf</th>
+                        <th>#5 Color changing light</th>
+                        <th>#6 Willow</th>
+                        <th>#7 Expanding ripples</th>
+                        <th>#8 Sphere</th>
+                        <th>#9 Drop</th>
+                        <th>#10 Cat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st - 3 pts</td>
+                        <td>x</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xxxx</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>xx</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>2nd - 2pts</td>
+                        <td></td>
+                        <td>x</td>
+                        <td>xxx</td>
+                        <td>x</td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        <td>xx</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3rd - 1pt</td>
+                        <td></td>
+                        <td>x</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>xxx</td>
+                        <td>xx</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Place:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>#1</td>
+                        <td>#2</td>
+                        <td></td>
+                        <td>#3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><b>Findings and Impact</b>:</h3>
+            <h4><b>Design Implications</b></h4>
+            <ul>
+                <li>Flexible Task Lists: Users will be able to create lists without fixed deadlines or time limits to better reflect natural work rhythms.</li>
+                <li>Break and Wrap-up Indicators: Users will be able to input break periods (e.g., lunch, end of day) to receive gentle wrap-up cues that support daily pacing and transition between tasks.</li>
+            </ul>
+            <h4><b>Aesthetic and Conceptual Preferences</b></h4>
+            <p>Although the participants were not fully representative of the intended target audience, their aesthetic preferences were consistent and informative. Images that evoked calmness were preferred by all seven participants, suggesting that visuals associated with calm, such as nature-inspired imagery, may be broadly generalized across user groups. The “leaf on a tree” concept received the most positive feedback.</p>
+        </div>
+
+        <div>
+            <h3><b>2 - Light-Based Reminder Prototype Testing (Ping-Pong Ball)</b></h3>
+            <h4><b>Method</b>:</h4>
+            <p>Within-subject design was used with 4 participants.</p>
+            <p>This stage evaluates the noticeability and helpfulness of a light-based ambient reminder system, created through the use of a flashlight and a ping pong ball on a string. The purpose is to test whether users notice the shadow motion and perceive them as non-intrusive task cues. Each participant completed 2–3 tasks at different times of day, allowing for testing under varied lighting conditions (natural light, mixed light, evening low light).</p>
+            <p>Participants were seated at their normal desks, and a soft, circular light was projected onto their wall. The shadow of the ping pong ball changed subtly at predefined intervals to signal time progression: mimicking a visual timer or ambient task cue.</p>
+            <p>Each session lasted between 20–120 minutes, depending on the participant’s chosen task and intervals. Participants were instructed that the light would act as a non-verbal time indicator, changing at intervals they selected (e.g., halfway, 10 minutes, 5 minutes, and end).</p>
+            <p>During the session, the researcher observed behavioral cues (eye movement, body orientation, verbal remarks) and noted timestamps of reactions. After each session, participants completed a post-test questionnaire using 1–5 Likert scales and were asked open-ended reflection questions.</p>
+            <h4><b>Photos of setups</b>:</h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture3.png" alt="Photos of setups" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Photos from Tests</b>:</h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture4.png" alt="Photos from Tests" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Videos from Tests (P1)</b>:</h4>
+            <video width="640" height="360" controls>
+                <source src="images/phase2/video1.mp4" type="video/mp4">
+            </video>
+            <video width="640" height="360" controls>
+                <source src="images/phase2/video11.mp4" type="video/mp4">
+            </video>
+            <video width="640" height="360" controls>
+                <source src="images/phase2/video111.mp4" type="video/mp4">
+            </video>
+            <video width="640" height="360" controls>
+                <source src="images/phase2/video2.mp4" type="video/mp4">
+            </video>
+
+            <h4><b>Usability Goals</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Goal</th>
+                        <th>Metric</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Noticeability</b></td>
+                        <td>% of reminders noticed; Time to notice after cue</td>
+                    </tr>
+                    <tr>
+                        <td><b>Non-distraction</b></td>
+                        <td>Self-rated distraction level (1-5) + observed task disruption</td>
+                    </tr>
+                    <tr>
+                        <td><b>Helpfulness</b></td>
+                        <td>Self-rated helpfulness (1-5) + post-task comments</td>
+                    </tr>
+                    <tr>
+                        <td><b>Comfort</b></td>
+                        <td>Self-rated comfort/pleasantness (1-5)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Cue Understanding</b></td>
+                        <td>Accuracy in describing what the light indicated</td>
+                    </tr>
+                    <tr>
+                        <td><b>Task Continuity</b></td>
+                        <td>Ability to resume focus after noticing the cue</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4><b>Intro Script:</b></h4>
+            <p>“Thanks for joining this session. Today you’ll be testing a visual reminder concept that uses ambient light projected onto your wall instead of a screen timer or sound alert. The shadow will shift subtly at certain intervals during your work or study task. Please just make a thumbs up or raise your hand when you notice it moving.</p>
+            <p>It’s meant to help you stay aware of time passing: like a visual timer without numbers or countdowns. You can tell me how long your session will be and whether you’d like any custom reminders (for example, halfway, 10 minutes before, and at the end).</p>
+            <p>Please tell me what task you are working on and what kinds of timers you would like to alert you to the end of the time you are allotting to this task”</p>
+            <p>“Great — I’ll set up the light now. While you’re working, just behave naturally. You don’t have to watch the light; it’s there in your environment. Please remember to indicate to me with a hand gesture when you notice the ball shadow move. I’ll ask you a few questions afterward.”</p>
+            <h4><b>During Task Script (Observer Notes)</b>:</h4>
+            <p>The researchers silently observe participant reactions.</p>
+            <p>Each cue change is timestamped (e.g., 0:04 after cue), and any user reactions—eye or head movement, verbal comments, and gestures—are recorded.</p>
+            <p>If participants make spontaneous remarks (e.g., “Oh, I saw that” or “That was distracting”), these are noted in the Comments/Notes section corresponding to each reminder.</p>
+            <h4><b>Metrics recorded live</b>:</h4>
+            <ul>
+                <li>Time to notice (in seconds) after each reminder</li>
+                <li>Number of reminders noticed out of total</li>
+                <li>Environmental lighting conditions</li>
+                <li>Task type (e.g., studying, writing, call)</li>
+                <li>Context (time of day, ambient brightness)</li>
+            </ul>
+            <p>See full data collection sheet here. <a href="https://airtable.com/appqtkyPvZABMxw2b/tblayDNUxbQtEwBrc/viw4BdMsj2DQFGEUc?blocks=hide">CLICK THIS LINK</a></p>
+            <div class="text-center">
+                <img src="images/phase2/Picture5.png" alt="Photos from Tests" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h3><b>Findings and Impact</b></h3>
+            <h4><b>Data collection table averages</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Metric / Notes</th>
+                        <th>P1</th>
+                        <th>P2</th>
+                        <th>P3</th>
+                        <th>P4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Context / Lighting</td>
+                        <td>Bright day, curtains drawn</td>
+                        <td>Day bright / Night dim</td>
+                        <td>Daytime, afternoon light</td>
+                        <td>Daytime, evening light</td>
+                    </tr>
+                    <tr>
+                        <td>Task Type</td>
+                        <td>Study & work</td>
+                        <td>Call & writing</td>
+                        <td>Working</td>
+                        <td>Studying</td>
+                    </tr>
+                    <tr>
+                        <td>Avg. Notice Time</td>
+                        <td>4.5 s (range 3-7 s)</td>
+                        <td>3.5 s (range 1-9 s)</td>
+                        <td>1 s (range 0-3s)</td>
+                        <td>2 s (range 1-2s)</td>
+                    </tr>
+                    <tr>
+                        <td>Missed Cues</td>
+                        <td>None :)</td>
+                        <td>None :)</td>
+                        <td>None :)</td>
+                        <td>None :)</td>
+                    </tr>
+                    <tr>
+                        <td>Key Comments</td>
+                        <td>Motion distracting initially, motivated & reassuring; preferred halfway/end reminders</td>
+                        <td>Reassuring, time-anchoring; 5-min cue useful; suggested combined 10-min cue; placement matters</td>
+                        <td>Reassuring, time-anchoring; 5-min cue useful; Suggested having it maximum two times. Halfway, and 5 minutes to the end.</td>
+                        <td>Prefer 10 min before the end and halfway. useful; suggested combined 10-min cue; placement matters</td>
+                    </tr>
+                    <tr>
+                        <td>Likert Ratings (1–5) Averages</td>
+                        <td>Helpfulness 4.5 <br> Noticeability 5 <br> Distraction 2.5 <br> Anxiety 1 <br> Comfort 4.5 <br> Understanding 5</td>
+                        <td>Helpfulness 4 <br> Noticeability 5 <br> Distraction 2 <br> Anxiety 1 <br> Comfort 5 <br> Understanding 5</td>
+                        <td>Helpfulness 4 <br> Noticeability 5 <br> Distraction 3 <br> Anxiety 1 <br> Comfort 4 <br> Understanding 4</td>
+                        <td>Helpfulness 4 <br> Noticeability 5 <br> Distraction 4 <br> Anxiety 1 <br> Comfort 4 <br> Understanding 5</td>
+                    </tr>
+                    <tr>
+                        <td>Insights</td>
+                        <td>Adapted quickly; cues robust in varying light; minimal distraction</td>
+                        <td>Adapted well; visibility affected by secondary screen; cues improved pacing and confidence</td>
+                        <td>Adapted quickly; but afraid they might ignore it if too focused on writing.</td>
+                        <td>Initially distractive, adapted later, and found helpful.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><b>Important Findings Summary</b>:</h4>
+            <ol>
+                <li>Noticeability remained high across all sessions, regardless of ambient light.</li>
+                <li>Distraction increased at the 5-minute cue, particularly when movement speed was high- this could be stress of not being able to finish task (participant is rushing already). To be tested again with higher fidelity and more control</li>
+                <li>Participants appreciated predictable timing (halfway or end cues) more than frequent signals.</li>
+                <li>Cue understanding was intuitive, with all users identifying the meaning of transitions by end of session.</li>
+                <li>Emotional comfort was positively rated; users described the light as “calming” or “non-urgent.”</li>
+                <li>Several suggested customizable brightness or motion settings for different tasks and lighting conditions. This is a consideration for the projector we will use (should have some settings ideally that we can access through the app).</li>
+                <li>Time of reminder should be longer than the longest time to notice and task types might need to impact the intensity of the notification (writing in particular). In this case maybe 5-7s for most tasks but longer (over 10s) if task includes “writing, paper, report etc. in title.</li>
+                <li>If the participant had an unideal condition and the reminder was on the side rather than centrally, they noticed less. Important to mention in documentation as do’s and don’ts.</li>
+            </ol>
+            
+        </div>
+
+        <div>
+            <h3><b>3 – Schedule App Prototype Usability AB Test A: Routine and Tasks Options vs B: Zones & Support</b></h3>
+            <h4><b>Early Sketches and Ideation</b></h4>
+            <p>To explore different ways of communicating scheduling and time organization, we ideated multiple menu layouts and interaction flows for the interface. These early sketches capture our brainstorming around how users could start their day, define “zones” or “routines” and manage their daily tasks through simple, intuitive visuals. As we discussed and refined these sketches, certain menu concepts stood out as clearer and more engaging. From these insights, we developed two distinct design flows — Version A and Version B — to prototype and test in usability sessions.</p>
+            <h4><b>Ideation sketches</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture6.png" alt="Ideation sketches" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Overview</b></h4>
+            <p>This study used a comparative A/B testing method to evaluate two versions of a scheduling and time-management app prototype:</p>
+            <ul>
+            <li>Test A - “Routines and Tasks Options” and Test B - “Zones and Support.”</li>
+            </ul>
+            <p>Both prototypes were developed as low-fidelity paper interfaces that model distinct approaches to daily planning and interaction with the system.</p>
+            <ul>
+            <li>Test A focused on routines, time blocking, and task management through lists and recurring patterns.</li>
+            <li>Test B introduced a zone-based structure and emotional support elements integrated into the user flow with more details.</li>
+            </ul>
+            <p>Participants were four adult users with varied planning styles and familiarity with scheduling tools. Two completed both versions of the test (A and B), while two additional participants were planned to balance the test order and explore potential differences in flow comprehension.</p>
+            <p>Each session followed a think-aloud protocol, where participants interacted with the prototypes while verbalizing their thoughts, assumptions, and confusions. The researcher prompted reflection at key screens and transitions to uncover expectation of mismatches and usability breakdowns.</p>
+            <p>Across both tests, the research team observed and recorded:</p>
+            <ul>
+                <li>Confusion or hesitation during task entry and navigation</li>
+                <li>Differences in mental models of “zones” versus “routines”</li>
+                <li>Preferences for input style (simple vs. structured)</li>
+                <li>Desired level of system support (task-only vs. emotional assistance)</li>
+            </ul>
+            <!-- <p>#</p>
+            <p>Test Order</p> -->
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>#</td>
+                        <td>Test Order</td>
+                    </tr>
+                    <tr>
+                        <td>P1</td>
+                        <td>A → B</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>P3</td>
+                        <td>B → A</td>
+                    </tr>
+                    <tr>
+                        <td>P4</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <h4><b>Sections and test comparison table</b>:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th><b>Test A Task</b></th>
+                        <th><b>Goal / Focus</b></th>
+                        <th><b>Test B Task</b></th>
+                        <th><b>Goal / Focus</b></th>
+                        <th><b>Notes on Comparison</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>B1 – Start / End Entry</td>
+                        <td>Can users start/end the day intuitively?</td>
+                        <td>Test B adds a starting workflow that A does not have</td>
+                    </tr>
+                    <tr>
+                        <td>A1 – Add Routines (Weekly Patterns & Routines)</td>
+                        <td>Can users create weekly patterns and recurring routines?</td>
+                        <td>B2 – Add Zones</td>
+                        <td>Can users understand and define day segmentation with zones?</td>
+                        <td>Both focus on structuring the day and recurring time blocks</td>
+                    </tr>
+                    <tr>
+                        <td>A2 – Add Tasks</td>
+                        <td>Can users add a new task to their day?</td>
+                        <td>B3 – Task Category Selection</td>
+                        <td>Can users understand flexible/fixed/open tasks and options?</td>
+                        <td>Both focus on task creation and understanding task types</td>
+                    </tr>
+                    <tr>
+                        <td>A3 – Day Plan Review</td>
+                        <td>Can users review the day and interpret tasks?</td>
+                        <td>B4 – Day Plan View with Tasks</td>
+                        <td>Can users understand day overview with tasks in zones?</td>
+                        <td>Both assess comprehension of the day overview</td>
+                    </tr>
+                    <tr>
+                        <td>A4 – Task Modification (Break / Split)</td>
+                        <td>Can users move or adjust tasks?</td>
+                        <td>B5a – “Task Options” Overlay</td>
+                        <td>Can users understand task management options?</td>
+                        <td>Both test task modification and management features</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>B5b – “Overwhelm” Overlay</td>
+                        <td>Explore perception of mental support features</td>
+                        <td>Test B adds extra support/mental wellness features</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><b>3.1 Test A – “Routine and Task Options”</b></h4>
+            <h4><b>Purpose</b></h4>
+            <ul>
+                <li>Evaluate how users interact with <b>routine/task input</b>, Day Plan review, and task addition.</li>
+                <li>Compare usability and preference versus Test B (zones and support).</li>
+            </ul>
+            <h4><b>Method</b></h4>
+            <ul>
+                <li><b>Prototype Type</b>: Paper prototypes</li>
+                <li><b>Participants Tested</b>: 4</li>
+                <li><b>Session Duration</b>: 20–35 minutes per participant</li>
+                <li><b>Data Collected</b>:</li>
+                <ul>
+                    <li>Task completion</li>
+                    <li>Confusion points</li>
+                    <li>Verbal feedback</li>
+                    <li>Emotional response to interface</li>
+                </ul>
+            </ul>
+            <h4><b>Tasks Overview</b></h4>
+            <p>Participants were asked to complete a series of actions reflecting the app’s core purpose of daily planning and emotional regulation:</p>
+            <ul>
+                <li>Define start and end times for the day</li>
+                <li>Add and label “Zones” to segment the day</li>
+                <li>Add and categorize tasks as Flexible, Fixed, or Open</li>
+                <li>Review the day plan and interpret its layout</li>
+                <li>Explore task management options (pause, extend, move)</li>
+                <li>Explore emotional support options (“Break” or “Overwhelm” features)</li>
+            </ul>
+            
+            <h4><b>Stills from video of paper proto testing with P1</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture7.png" alt="Ideation sketches" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>Tasks Overview</b></h4>
+            <h4><b>A1 – Add Routines (Weekly Patterns & Routines)</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture8.png" alt="A 1 – Add Routines (Weekly Patterns & Routines)" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <p><b>Goal</b>:</p>
+            <ul>
+                <li>Determine if users can create weekly patterns for their desk hours.</li>
+                <li>Evaluate user understanding of recurring daily routines (e.g., lunch, gym, errands).</li>
+            </ul>
+            <p><b>Instructions to User</b>:</p>
+            <p>Set your weekly patterns: When are you usually at your desk each day? Try to add a recurring activity (e.g., lunch) for every day of the week. See if you can differentiate between tasks and routines and add new tasks to your schedule. Start your task reminder and play the projection, see if you can mark the task as complete or move it to later.</p>
+            <p><b>Researcher Questions / Prompts</b>:</p>
+            <ul>
+                <li>Do the start/end times match your usual routine?</li>
+                <li>Can you easily add multiple groups of days with different times?</li>
+                <li>Can you add a new routine successfully?</li>
+                <li>Does the interface make it clear which days the routine applies to?</li>
+                <li>What was against your expectations or was confusing?</li>
+            </ul>
+            <p><b>Follow-ups</b>:</p>
+            <ul>
+                <li>Track confusion around dropdowns, labels, and the toggle between weekly patterns and routines.</li>
+                <li>Observe if the slider and time picker are intuitive and explore simpler alternatives.</li>
+            </ul>
+            <h4><b>A2 – Add Tasks</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture9.png" alt="A 2 – Add Tasks" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Determine if users can add a new task to their day.</li>
+            <li><b>Instructions to User</b>: Click the “+” and add a task with a name, duration, and optional deadline.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Do you understand “save and view” vs. “save and add next”?</li>
+                <li>Is the overlay intuitive?</li>
+            </ul>
+            <li>Follow-ups: Track confusion with time slider or optional fields.</li>
+            </ul>
+            <h4><b>A3 – Day plan Review</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture10.png" alt="A 3 – Day plan Review" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <p>Goal: Understand if users can review their day and interpret imported or created tasks.</p>
+            <p>Instructions to User: Go to “Day plan” and review your day with existing tasks.</p>
+            <p>Researcher Questions / Prompts:</p>
+            <ul>
+                <li>Where did this meeting or lunch task come from?</li>
+                <li>Are all tasks clear in placement and duration?</li>
+            </ul>
+            <p>Follow-ups: Observe assumptions and any confusion points.</p>
+            <h4><b>A4 – Task Modification (Break or split)</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture11.png" alt="A 4– Task Modification (Break or split)" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Understand if users can move or adjust tasks.</li>
+            <li><b>Instructions to User</b>: Try moving a task or marking it as complete.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>How intuitive is the “…” menu?</li>
+                <li>Are notifications about moving tasks clear?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Note confusion, unexpected behavior, or suggestions.</li>
+            </ul>
+            <h4><b>3.1.4 Sample of Observation Table (P3)</b></h4>
+            <p>Here is a sample of the observations collected for each participant in the test. This is only for participant 3 with detailed notes.</p>
+            <div class="text-center">
+                <img src="images/phase2/Picture12.png" alt="Sample of Observation Table (P3)" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>3.1.5 Findings – Test A: “Routines and Task options”</b></h4>
+            <h4><b>Task Completion Rates</b></h4>
+            <p>Participants completed the primary tasks successfully (creating a routine, viewing the day plan, marking tasks as done). They found the flow clear and the overall product useful. Minor slowdowns occurred during time input and tab navigation, but tasks were generally achievable once users explored. Task completion rate is considered high since the flow is learnable, but it requires improvements for efficiency.</p>
+            <h4><b>Confusion Points</b></h4>
+            <ul>
+                <li><b>Weekly Pattern vs. Routine Tabs</b>: Users found these two sections redundant or unclear in distinction. They suggested merging them into a single view (e.g., Weekly and Daily instead).</li>
+                <li><b>Time Selection</b>: The two-step time picker (start time + duration) was confusing. Participants preferred a simpler, direct start and end time format.</li>
+                <li><b>Button Visibility / Affordance</b>: The three-dot menu button was unclear, users didn’t know what it did or what options were hidden under it. The plus button to add tasks does not make it clear whether it is for adding a new routine or tasks.</li>
+                <li><b>Task Adjustment Flow</b>: After choosing “move to later,” users expected to directly reassign time, but had to go back to another screen, it was perceived as unnecessary step.</li>
+                
+            </ul>
+            <h4><b>Misalignments with Expectations</b></h4>
+            <p>Users expected a simpler navigation model which has fewer tabs and clearer naming (“Weekly,” “Day plan”). They also expected visual time anchors (like current date/time) to orient themselves while seeing their schedule for the day.</p>
+            <h4><b>Overall Insights & Emotional Responses</b></h4>
+            <p>Participants described the app as clear and simple, appreciating how it conveyed progress and completion without clutter. The step-by-step flow aligned well with the intended ambient experience. However, users got frustrated when navigating between the tabs which seemed similar and redundant (Weekly Pattern vs. Routine) or adjusting times through multiple steps.</p>
+            <p>The absence of a visible current date/time made some feel slightly disoriented. Despite these issues, participants generally felt in control and were not overwhelmed; their confusion was brief. Overall, users responded positively to the flow and structure of the app, but preferred fewer steps, and clearer distinctions between sections to strengthen the usability.</p>
+        </div>
+
+        <div>
+            <h3><b>3.2 Test B – “Zones and Support”</b></h3>
+            <h4><b>Purpose</b></h4>
+            <ul>
+                <li>Evaluate the usability of the “Zones” feature and the task category system (Flexible, Fixed, Open), as well as the comprehension and perceived usefulness of emotional support features.</li>
+                <li>Compare preferences and usability patterns to those observed in Test A (“Routines and Schedule”).</li>
+            </ul>
+            <h4><b>Method</b></h4>
+            <ul>
+                <li>Prototype Type: Paper prototypes</li>
+                <li>Session Duration: 20–30 minutes per participant</li>
+                <li>Data Collected: Task completion, confusion, expectations vs. reality, emotional response</li>
+            </ul>
+            <h4><b>Tasks Overview</b></h4>
+            <p>Participants were asked to complete a series of actions reflecting the app’s core purpose of daily planning and emotional regulation:</p>
+            <ul>
+                <li>Define start and end times for the day</li>
+                <li>Add and label “Zones” to segment the day</li>
+                <li>Add and categorize tasks as Flexible, Fixed, or Open</li>
+                <li>Review the day plan and interpret its layout</li>
+                <li>Explore task management options (pause, extend, move)</li>
+                <li>Explore emotional support options (“Break” or “Overwhelm” features)</li>
+            </ul>
+            <h4><b>B1 – Start / End Entry & add zones</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture13.png" alt="B1 – Start / End Entry & add zones" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Determine if users naturally start/end their day in the system format.</li>
+            <li><b>Instructions to User</b>: Tell us when your days usually start and end.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Do these inputs match your usual planning?</li>
+                <li>Would you change anything about how start/end is recorded?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Track confusion around ranges vs. absolute times.</li>
+            </ul>
+            <h4><b>B2 – Add Zones</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture14.png" alt="B2 – Add Zones" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Evaluate user understanding of day segmentation.</li>
+            <li><b>Instructions to User</b>: Add zones to your day.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Do you have zones for your day?</li>
+                <li>How do inputs/outputs match expectations?</li>
+                <li>Would zones be useful for your todo list?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Observe confusion around recurring options or naming.</li>
+            </ul>
+            <h4><b>B3 – Task Category Selection</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture15.png" alt="B3 – Task Category Selection" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Evaluate comprehension of flexible/fixed/open tasks and complex options</li>
+            <li><b>Instructions to User</b>: Select a task category and add a task.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Are these categories clear?</li>
+                <li>Does this match your expectation for your tasks?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Compare blank vs. filled input screens.</li>
+            </ul>
+            <h4><b>B4 – Day plan View with Tasks</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture16.png" alt="B4 – Day plan View with Tasks" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Evaluate comprehension of day overview with tasks in zones.</li>
+            <li><b>Instructions to User</b>: Review day with some tasks populated.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Is the level of detail adequate? Too much or too little?</li>
+                <li>Any confusion about task placement or remaining time?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Track if users notice progress indicators.</li>
+            </ul>
+            <h4><b>B5a – “Task Options” Overlay</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture17.png" alt="B5a – “Task Options” Overlay" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Explore understanding of task management options.</li>
+            <li><b>Instructions to User</b>: Select a task and explore options.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Are options sufficient for managing tasks mid-task?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Observe comprehension of add time, mark complete, move later.</li>
+            </ul>
+            <h4><b>B5b – “Overwhelm / Break” Overlay</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture18.png" alt="B5b – “Overwhelm / Break” Overlay" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <ul>
+            <li><b>Goal</b>: Explore perception of mental support features.</li>
+            <li><b>Instructions to User</b>: Select “stressed person” icon and explore options.</li>
+            <li><b>Researcher Questions / Prompts</b>:</li>
+            <ul>
+                <li>Are the options sufficient for managing overwhelm?</li>
+                <li>Do you want support or prefer self-management?</li>
+                <li>Other helpful relaxation techniques?</li>
+            </ul>
+            <li><b>Follow-ups</b>: Record suggestions for break customization or alternative support.</li>
+            </ul>
+            <h4><b>3.2.4 Benchmark & Findings Table for Test B</b></h4>
+            <div class="text-center">
+                <img src="images/phase2/Picture19.png" alt="Benchmark & Findings Table for Test B" class="img-fluid" style="max-height: 800px;">
+            </div>
+            <h4><b>3.2.5 Findings – Test B</b></h4>
+            <h4><b>Overall Summary</b></h4>
+            <p>Participants demonstrated a strong conceptual understanding of the “Zones and Support” system but encountered confusion around terminology, redundant flows, and tone of language. Most could complete the tasks after minimal exploration, indicating that the interface was learnable but not immediately intuitive.</p>
+            <h4><b>Key Confusion Points</b></h4>
+            <p><b>Start/End Day Setup</b></p>
+            <p>Users were uncertain whether they were setting up their day in advance or starting it immediately. The relative time option (“in 15 minutes”) created ambiguity compared to entering fixed times (e.g., 9:00 AM). This confusion reduced confidence in task initiation and highlighted a lack of need for starting and ending a day in this way. Possibly allow users to break “normal” days and start/ end early to move to the next “zone”.</p>
+            <p><b>Zones Creation and Naming</b></p>
+            <p>The term “Zone” was not universally understood. Users grasped the purpose of segmenting the day. Recurrence options were noted as important because the setup is a cognitive load, and users want to ensure it is done once correctly. Users did mention having different days (especially students based on class schedules).</p>
+            <p><b>Task Category Comprehension</b></p>
+            <p>While most users recognized that Flexible, Fixed, and Open represented different scheduling behaviors, the naming conventions were not intuitive. “Flexible” and “Open” were perceived as overlapping, while “Fixed” was clear but rigid. Users expected simpler, more self-explanatory terms (possibly renaming: “Optional,” “Timed,” and “Priority”). Examples to illustrate each type were the most helpful in comprehension.</p>
+            <p><b>Day Plan View</b></p>
+            <p>The day plan successfully communicated task order and progress, but visual clarity was limited by icon ambiguity and lack of a prominent “current task” indicator. The relationship between zones and individual tasks was not always clear, and users wanted stronger visual differentiation between recurring and one-time tasks.</p>
+            <p><b>Task Options Overlay</b></p>
+            <p>This feature was well-received for enabling mid-task management (e.g., adding time or moving tasks). However, iconography caused occasional hesitation, and text such as “not feeling this task” were misinterpreted or perceived as informal. Despite this, users valued the control of these options offered and found them generally intuitive once recognized. A strong point was created by one user mentioned that if tasks are split, there should be an ability to add notes as to why the task could not be completed (waiting report form X).</p>
+            <p><b>Overwhelm / Break Overlay</b></p>
+            <p>Users appreciated the inclusion of emotional support features but differed in how they preferred to take breaks. While some enjoyed guided meditations, others preferred quick, customizable options like walking, music, or humor. The feature’s intent was understood, but users expressed a desire for personalization and more options for relaxation.</p>
+            <h4><b>Overall Insights & Emotional Responses</b></h4>
+            <p>Participants responded positively to the system’s intent of balancing productivity and well-being. The combination of time segmentation and emotional support aligned with real-world needs for managing focus and stress. However, terminology and redundant flows (e.g., creating zones, then adding tasks separately) caused friction.</p>
+            <p>The interface was described as functional and conceptually appealing but requiring refinement to improve immediate clarity. Emotional responses ranged from appreciation for the structured calmness of the experience to mild frustration when encountering unclear terms or multiple similar steps.</p>
+            <p>Overall, Test B revealed that users valued structure, flexibility, and emotional support within their workflow. Improvements to naming, visual hierarchy, and personalization would enhance the usability and strengthen the system’s ambient, supportive qualities.</p>
+        </div>
+
+        <div>
+            <h3><b>3.3 Overall Findings – AB Comparison</b></h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Aspect / Goal</th>
+                        <th>What Worked / Keep</th>
+                        <th>Problems / Remove</th>
+                        <th>Needs More Exploration / Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B1: Day Start / End VS N/A</td>
+                        <td>Some people liked the option to start the day early / now if they are already at their desk</td>
+                        <td>Most people do not start their day this way or think about ending their day this way</td>
+                        <td>Find a simple way to allow starting earlier than the routine.</td>
+                    </tr>
+                    <tr>
+                        <td>A1: Routines / Patterns VS B2 : Zones</td>
+                        <td>Some participants like to structure their day into areas of focus (work vs School) keeping these tasks separate from one another</td>
+                        <td>Routines, patterns, and zones are all the same. Some participants do not need (this should be optional) and make much simpler</td>
+                        <td>Possibly having a full view of the day and “cutting it” into sections. Important to maintain the recurring part for students who have different classes on different days- add an end to the repetition- look at competitors</td>
+                    </tr>
+                    <tr>
+                        <td>A2: Task Input VS B3: Task Category Selection + Input</td>
+                        <td>Time pickers are more intuitive. The simpler format from A was appreciated by some participants. Other participants mentioned that tasks might not have deadlines, so the “open time” tasks seemed interesting.</td>
+                        <td>The view of B3 is too complicated, but some participants appreciated the idea of flexibility.</td>
+                        <td>Possibly adding a priority level to remove the need to give all tasks a deadline. Requires further investigation.</td>
+                    </tr>
+                    <tr>
+                        <td>A3 & B4: Day Plan / Output View</td>
+                        <td>Both were appreciated for different aspects of detail and simplicity.</td>
+                        <td>The play or start or view current task button is useless. Users assume that they can start the timer for the task but clicking on the task card/ task from the list. Remove the button and allow users more freedom to select task – which starts the timer (projection cues).</td>
+                        <td>Clarify the date of today and the view. There were benefits to both views so possibly giving the user freedom to switch between the two is most reasonable. Add icon for recurring task visibility.</td>
+                    </tr>
+                    <tr>
+                        <td>A4: Task Options VS B5: Task Options with Overwhelm Features</td>
+                        <td>The options were all appreciated and felt supportive</td>
+                        <td>From A: assumed as options but not clear what- they would like to have pause and mark as complete and move to later all handy and visible without entering a menu. From B: icons are very confusing, but both functionalities were appreciated. One participant mentioned not needing support. For task options- adding time on task was appreciated</td>
+                        <td>Options: make quick access options - Break: to pause timer (with more flexibility than) - Mark as complete: - Move to later: pick a new time and optionally add notes as to why the task needed to be moved to later. - Extend time on task: more flexibility required- notification of collision with other tasks. Overwhelm: Some participants were excited and mentioned adding other ways than just meditation (jokes, music, imagination scenarios etc.) to consider what is the most useful and feasible to have a bit more variety- relabel as emotional support with clear text. The navigation bar should be removed and replaced with these 5 options related to task- needs to be tested in V2.</td>
+                    </tr>
+                    <tr>
+                        <td>Other notes</td>
+                        <td></td>
+                        <td></td>
+                        <td>Some participants mentioned they wanted to be able to decide the time of the cues for themselves or to edit them. We should allow for this flexibility.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3><b>Overall Conclusions and Next Steps</b>:</h3>
+            <p>In an initial focus group (Test 1), participants consistently indicated that nature-inspired visuals helped create a sense of calm, with the “leaf on a tree” concept receiving the most positive feedback. To explore cue noticeability, we ran a simple projection test using a ping-pong ball as a time cue (Test 2), which showed that participants easily noticed cues and adapted quickly, even in varying lighting conditions. The design critique team (Group A) had concerns that daytime lighting might make the projector difficult to see, so we tested under different lighting and are now confident the cues will remain visible.</p>
+            <p>We also needed to understand the mental models’ users have for organizing their day, so low-fidelity AB tests (Test 3) examined how participants structure tasks, add routines, and manage recurring or flexible activities. Feedback showed that users are looking for simple ways to organize their day and stay on task, appreciate flexibility and recurring tasks, and respond positively to visual and supportive cues.</p>
+            <p>For the next steps, the focus will be on simplifying and refining the interaction flow by merging overlapping concepts like routines, patterns, and zones into a single, flexible daily view. The design will prioritize clearer time control and allow users to start, pause, or reschedule tasks directly from the main view without extra steps. Quick-access task options such as pause, mark complete, move to later, and extend time will replace hidden menus to improve usability. Additionally, the emotional support feature will be reframed and diversified beyond meditation to include light, uplifting interactions that enhance calmness. Overall, the next iteration will aim for a more intuitive experience that balances simplicity and flexibility.</p>
+        </div>
+
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; Team Group B</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
