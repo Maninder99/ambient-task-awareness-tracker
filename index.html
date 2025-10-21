@@ -1,3 +1,12 @@
+<div style="text-align: center; padding: 50px;">
+    <h2>Enter Credentials</h2>
+    <input type="text" id="usernameInput" placeholder="Username"><br><br>
+    <input type="password" id="passwordInput" placeholder="Password"><br><br>
+    <button onclick="checkCredentials()">Submit</button>
+</div>
+<div id="content" style="display: none;">
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,3 +153,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+</div>
+
+<script>
+    function checkCredentials() {
+        const username = document.getElementById("usernameInput").value;
+        const password = document.getElementById("passwordInput").value;
+        const correctUsername = "groupb";
+        const correctPassword = "groupb_jrm"; 
+        if (username === correctUsername && password === correctPassword) {
+            document.getElementById("content").style.display = "block";
+            document.querySelector("div[style*='padding: 50px']").style.display = "none";
+        } else {
+            alert("Incorrect username or password. Please try again.");
+        }
+    }
+</script>

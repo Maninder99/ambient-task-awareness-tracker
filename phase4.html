@@ -1,3 +1,12 @@
+<div style="text-align: center; padding: 50px;">
+    <h2>Enter Credentials</h2>
+    <input type="text" id="usernameInput" placeholder="Username"><br><br>
+    <input type="password" id="passwordInput" placeholder="Password"><br><br>
+    <button onclick="checkCredentials()">Submit</button>
+</div>
+<div id="content" style="display: none;">
+
+
 <!-- phase4.html -->
 <!DOCTYPE html>
 <!-- Similar structure, with Phase 4 content -->
@@ -6,3 +15,20 @@
     <h2>COMING SOON..... STAY CONNECTED</h2>
 
 </section>
+
+</div>
+
+<script>
+    function checkCredentials() {
+        const username = document.getElementById("usernameInput").value;
+        const password = document.getElementById("passwordInput").value;
+        const correctUsername = "groupb";
+        const correctPassword = "groupb_jrm"; 
+        if (username === correctUsername && password === correctPassword) {
+            document.getElementById("content").style.display = "block";
+            document.querySelector("div[style*='padding: 50px']").style.display = "none";
+        } else {
+            alert("Incorrect username or password. Please try again.");
+        }
+    }
+</script>
